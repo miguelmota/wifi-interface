@@ -1,4 +1,6 @@
 #!/usr/bin/env node
 
 const path = require('path')
-require(path.join('../index'))()
+const wifiInterface = require(path.join('../index'))
+
+console.log(wifiInterface())
