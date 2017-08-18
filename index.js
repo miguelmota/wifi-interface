@@ -17,9 +17,13 @@ function wifiInterface() {
 
     iface = cmd.stdout.trim()
   } else if (isWin) {
-    cmd = exec(`netsh interface show interface`, {silent:true})
+    cmd = exec(`netsh interface show interface | findstr Enabled`, {silent:true})
 
-    iface = cmd.stdout.trim()
+    const cols = cmd.stdout.trim().split(/\s{2,}/)
+
+    if (cols.length) {
+      cmd = cols[cols.length - 1]
+    }
   }
 
   return iface
