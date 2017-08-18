@@ -1,6 +1,6 @@
 {
   "name": "wifi-interface",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Get current wifi network interface name.",
   "main": "index.js",
   "bin": {

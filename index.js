@@ -4,7 +4,6 @@ const isLinux = /linux/.test(process.platform)
 const isMac = /darwin/.test(process.platform)
 const isWin = /win/.test(process.platform)
 
-
 function wifiInterface() {
   let cmd = ''
   let iface = ''
@@ -18,7 +17,9 @@ function wifiInterface() {
 
     iface = cmd.stdout.trim()
   } else if (isWin) {
-    // TODO
+    cmd = exec(`netsh interface show interface`, {silent:true})
+
+    iface = cmd.stdout.trim()
   }
 
   return iface
