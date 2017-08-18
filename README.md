@@ -10,7 +10,7 @@ npm install wifi-interface
 
 # Usage
 
-```bash
+```js
 const wifiInterface = require('wifi-interface')
 
 console.log(wifiInterface()) // "en0"
