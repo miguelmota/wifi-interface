@@ -1,6 +1,6 @@
 # wifi-interface
 
-> Returns the current wifi network interface.
+> Get current wifi network interface name.
 
 # Install
 
