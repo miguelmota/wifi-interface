@@ -1,0 +1,45 @@
+{
+  "name": "wifi-interface",
+  "version": "0.0.1",
+  "description": "Returns the current wifi network interface.",
+  "main": "index.js",
+  "bin": {
+    "wifi-interface": "bin/index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miguelmota/wifi-interface"
+  },
+  "keywords": [
+    "wifi",
+    "network",
+    "interface",
+    "name",
+    "ifconfig",
+    "iwconfig",
+    "80211"
+  ],
+  "author": {
+    "name": "Miguel Mota",
+    "email": "hello@miguelmota.com",
+    "url": "https://miguelmota.com"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/miguelmota/wifi-interface/blob/master/LICENSE.md"
+  },
+  "bugs": {
+    "url": "https://github.com/miguelmota/wifi-interface/issues"
+  },
+  "homepage": "https://github.com/miguelmota/wifi-interface",
+  "devDependencies": {},
+  "engines": {
+    "node": ">=7.9.0"
+  },
+  "dependencies": {
+
+  }
+}
