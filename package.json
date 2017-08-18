@@ -1,6 +1,6 @@
 {
   "name": "wifi-interface",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get current wifi network interface name.",
   "main": "index.js",
   "bin": {
@@ -40,6 +40,6 @@
     "node": ">=7.9.0"
   },
   "dependencies": {
-
+    "shelljs": "^0.7.8"
   }
 }
